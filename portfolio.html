@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
-    <link rel="stylesheet" href="style.css">
+   
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ZBaB-IWSUpCsDJMby",
+      });
+   })();
+</script>
+
 </head>
 <body>
       <nav>
@@ -55,14 +68,28 @@
   </div>
   </section>
 
-<section id="contact">
-  <h1>Contact</h1>
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+<div class="abc">
+    <form class="form">
+        
+        <h1>contact me</h1>
+        <label for="name">Name</label>
+        <input  type="text" id="name" placeholder=" enter Name">
+        <br><br>
+        <label for="email">Email</label>
+        <input  type="email"  id="email" placeholder=" enter Email address">
+        <br><br>
+        <label for="contact">Contact Number</label>
+        <input  type="text" id="contact" placeholder="enter number">
+        <br><br>
+        <label for="msg">Messages</label>
+        <textarea id="msg" placeholder="send a message"></textarea>
+        <br><br>
+        <button type="button" class="btn" onclick="sendEmail()">send</button>
+
+    </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
